@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@quintondev/build-dock": "^0.1.0"
+  }
+}
