@@ -1,18 +1,28 @@
 {
   "expo": {
-    "name": "build-dock-mobile",
-    "slug": "build-dock-mobile",
+    "name": "Build Dock",
+    "slug": "build-dock",
     "version": "1.0.0",
     "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "scheme": "builddock",
+    "description": "The mobile companion app for Build Dock by Quinton Dev.",
     "icon": "./assets/images/icon.png",
-    "scheme": "builddockmobile",
-    "userInterfaceStyle": "automatic",
     "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.quintondevstudios.builddock",
       "icon": "./assets/expo.icon"
     },
-
-      "predictiveBackGestureEnabled": false,
-      "package": "com.quintondev.builddockmobile"
+    "android": {
+      "package": "com.quintondev.builddockmobile",
+      "adaptiveIcon": {
+        "backgroundColor": "#02101C",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    }
     },
     "web": {
       "output": "static",
@@ -23,7 +33,7 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "#02101C",
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }
